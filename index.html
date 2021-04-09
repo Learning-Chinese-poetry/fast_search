@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>link google</title>
+  <style type="text/css">
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .opration-btns {
+      width: 100%;
+      max-width: 580px;
+      margin-top: 10px;
+      margin-bottom: 12px;
+    }
+
+    .opration-btns .copy-links {
+      float: right;
+    }
+
+
+    #content-area {
+      width: 100%;
+      max-width: 580px;
+    }
+
+    #result {
+      line-height: 2;
+      color: #555;
+    }
+
+    #result .link-line:hover {
+      transition: all 0.5s ease;
+      color: #000;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <textarea id="content-area" autofocus rows="16" placeholder="请输入文本"></textarea>
+  <div class="opration-btns">
+    <button class="copy-links">复制所有链接</button>
+  </div>
+  <div id="result"></div>
+
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
