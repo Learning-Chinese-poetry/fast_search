@@ -18,7 +18,9 @@
       margin-bottom: 12px;
     }
 
-    .opration-btns .copy-links {
+    .opration-btns .copy-links-btn,
+    .opration-btns .clear-btn {
+      margin-left: 12px;
       float: right;
     }
 
@@ -27,6 +29,8 @@
       width: 100%;
       max-width: 580px;
       box-sizing: border-box;
+      font-size: 15px;
+      color: #000;
     }
 
     #result {
@@ -46,12 +50,15 @@
 
   <textarea id="content-area" autofocus rows="16" placeholder="请输入文本"></textarea>
   <div class="opration-btns">
-    <button class="copy-links">复制所有链接</button>
+    <input class="addtion-kw" placeholder="追加关键词">
+    <button class="copy-links-btn">复制所有链接</button>
+    <button class="clear-btn">清除</button>
   </div>
   <h3> links </h3>
   <div id="result"></div>
 
 
+  <script src="./mockData.js"></script>
   <script src="./main.js"></script>
 </body>
 
